@@ -18,7 +18,6 @@ export default function App() {
         <Text>So sexy!!!</Text>
         <Text style={styles.scroll}>So Cool</Text>
         <Text>So sexy!!!</Text>
-
         <Text style={styles.scroll}>So Cool</Text>
         <Text>So sexy!!!</Text>
         <Text style={styles.scroll}>So Cool</Text>
@@ -28,6 +27,9 @@ export default function App() {
         <Text style={styles.scroll}>So Cool</Text>
         <Text>So sexy!!!</Text>
       </ScrollView>
+      <View style={styles.footer}>
+        <Text style={styles.foot}>foot</Text>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -45,17 +47,28 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   hello: {
+    marginTop: 30,
     fontSize: 50,
     height: 100,
     color: "white",
     fontWeight: "400",
   },
   teal: {
-    backgroundColor: "teal",
     height: "50%",
+    backgroundColor: "teal",
+    height: "70%",
   },
   scroll: {
     fontSize: 100,
-    fontWeight: "600",
+  },
+  footer: {
+    backgroundColor: "tomato",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  foot: {
+    fontSize: 80,
+    color: "white",
   },
 });
