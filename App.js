@@ -4,31 +4,35 @@ const { height: HEIGHT } = Dimensions.get("window");
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.purple}>
-        <Text style={styles.hello}>Hello</Text>
+      <View style={styles.oneHalf}>
+        <View style={styles.purple}>
+          <Text style={styles.hello}>Hello</Text>
+        </View>
+        <View style={styles.footer}>
+          <Text style={styles.foot}>foot</Text>
+        </View>
       </View>
-      <ScrollView style={styles.teal}>
-        <Text style={styles.scroll}>So Cool</Text>
-        <Text>So sexy!!!</Text>
-        <Text style={styles.scroll}>So Cool</Text>
-        <Text>So sexy!!!</Text>
-        <Text style={styles.scroll}>So Cool</Text>
-        <Text>So sexy!!!</Text>
-        <Text style={styles.scroll}>So Cool</Text>
-        <Text>So sexy!!!</Text>
-        <Text style={styles.scroll}>So Cool</Text>
-        <Text>So sexy!!!</Text>
-        <Text style={styles.scroll}>So Cool</Text>
-        <Text>So sexy!!!</Text>
-        <Text style={styles.scroll}>So Cool</Text>
-        <Text>So sexy!!!</Text>
-        <Text style={styles.scroll}>So Cool</Text>
-        <Text>So sexy!!!</Text>
-        <Text style={styles.scroll}>So Cool</Text>
-        <Text>So sexy!!!</Text>
-      </ScrollView>
-      <View style={styles.footer}>
-        <Text style={styles.foot}>foot</Text>
+      <View style={styles.twoHalf}>
+        <ScrollView style={styles.teal}>
+          <Text style={styles.scroll}>So Cool</Text>
+          <Text>So sexy!!!</Text>
+          <Text style={styles.scroll}>So Cool</Text>
+          <Text>So sexy!!!</Text>
+          <Text style={styles.scroll}>So Cool</Text>
+          <Text>So sexy!!!</Text>
+          <Text style={styles.scroll}>So Cool</Text>
+          <Text>So sexy!!!</Text>
+          <Text style={styles.scroll}>So Cool</Text>
+          <Text>So sexy!!!</Text>
+          <Text style={styles.scroll}>So Cool</Text>
+          <Text>So sexy!!!</Text>
+          <Text style={styles.scroll}>So Cool</Text>
+          <Text>So sexy!!!</Text>
+          <Text style={styles.scroll}>So Cool</Text>
+          <Text>So sexy!!!</Text>
+          <Text style={styles.scroll}>So Cool</Text>
+          <Text>So sexy!!!</Text>
+        </ScrollView>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -47,7 +51,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   hello: {
-    marginTop: 30,
+    marginTop: 40,
     fontSize: 50,
     height: 100,
     color: "white",
@@ -70,5 +74,11 @@ const styles = StyleSheet.create({
   foot: {
     fontSize: 80,
     color: "white",
+  },
+  oneHalf: {
+    flex: 1,
+  },
+  twoHalf: {
+    flex: 2,
   },
 });
